@@ -30,6 +30,8 @@ def create_cnn():
     model = Model(input, x)
     return model
 
+# Finish building the model
+
 def train(n_labeled_data):
     model = create_cnn()
     (X_train, y_train), (X_test, y_test) = cifar10.load_data()
